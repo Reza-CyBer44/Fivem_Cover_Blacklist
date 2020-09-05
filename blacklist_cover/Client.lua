@@ -14,9 +14,7 @@ Citizen.CreateThread(function()
 			end
 			
           end
-		 SetPlayerCanUseCover(PlayerId(), disablecover)
-		 SetPlayerCanUseCover(PlayerId(), not disablecover)
-		  
+		 SetPlayerCanUseCover(PlayerId(), not disablecover)		  
      Wait(400)
    end
 end)
