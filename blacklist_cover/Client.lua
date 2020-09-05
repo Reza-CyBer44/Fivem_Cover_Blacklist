@@ -18,7 +18,7 @@ Citizen.CreateThread(function()
 		  
 		  
 		  SetPlayerCanUseCover(PlayerId(), false)
-		  print('disabled')
+	
 		  
 		  else
 		  
