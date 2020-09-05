@@ -1,5 +1,5 @@
 Citizen.CreateThread(function()
-        while true do
+     while true do
          local disablecover = false
 		 local cords = GetEntityCoords(PlayerPedId(),true)
           for _,v in pairs(Zones) do
@@ -14,20 +14,9 @@ Citizen.CreateThread(function()
 			end
 			
           end
-		  if disablecover then
+		 SetPlayerCanUseCover(PlayerId(), disablecover)
+		 SetPlayerCanUseCover(PlayerId(), not disablecover)
 		  
-		  
-		  SetPlayerCanUseCover(PlayerId(), false)
-	
-		  
-		  else
-		  
-		  
-		 SetPlayerCanUseCover(PlayerId(), true)
-		  
-		  
-		  end
-		  
-        Wait(0)
-        end
+     Wait(400)
+   end
 end)
